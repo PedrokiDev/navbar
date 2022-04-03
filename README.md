@@ -6,6 +6,6 @@
 
 <p>Quer saber como ficou?! É só clicar no link abaixo!! 👇</p>
 
-navbar-rho.vercel.app
+https://navbar-rho.vercel.app
 
 <p>Feito com ♥ por mim, PedrokiDev!</p>
