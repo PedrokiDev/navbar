@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F2F7FE;
+}
+.nav-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 4em;
+    box-shadow: 0px 2px 5px rgb(187, 187, 187);
+}
+.nav-header{
+    display: flex;
+    align-items: center;
+}
+.logo1{
+    margin: 10px;
+    font-size: 27px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgb(151, 151, 151);
+    font-family: 'Roboto', sans-serif;
+}
+.logo2{
+    font-size: 27px;
+    font-weight: 400;
+    color: #8dbadb;
+    text-shadow: 0px 2px 2px rgb(151, 151, 151);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+.links li{
+    padding: 10px;
+    list-style-type: none;
+    font-size: 20px;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.social-icons li{
+    margin: 10px;
+    list-style-type: none;
+}
+.social-icons a{
+    text-decoration: none;
+}
+.nav-toggle{
+    background: none;
+    border: none;
+    font-size: 20px;
+    display: none;
+}
+@media screen and (max-width: 770px){ 
+     .nav-toggle{
+         display: flex;
+         position: fixed;
+         right: 0;
+         padding-right: 15px;
+         cursor: pointer;
+         color: #8dbadb;
+     }
+     .nav-toggle i{
+        transition: 0.5s;
+     }
+     .nav-toggle i:hover{
+        transform: rotate(90deg);
+     }
+     .social-icons{
+         display: none;
+     }
+     .nav-center{
+         display: flex;
+         justify-content: flex-start;
+         align-items: flex-start;
+         flex-direction: column;
+         height: 100%;
+     }
+     .links{
+         display: flex;
+         align-items: left;
+         justify-content: space-between;
+         flex-direction: column;
+         width: 100%;
+         overflow: hidden;
+         height: 0;
+     }
+     .show-links{
+        height: 11em;
+        transition: all 0.3s linear;
+    }
+     .links li{
+        transition: 0.5s;
+     }
+     .links li:hover{
+        background-color: #b4d9f3;
+        padding-left: 20px;
+        cursor: pointer;
+     }
+}
